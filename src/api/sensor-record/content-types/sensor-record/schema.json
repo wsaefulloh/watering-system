@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sensor_records",
+  "info": {
+    "singularName": "sensor-record",
+    "pluralName": "sensor-records",
+    "displayName": "Sensor Record"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "soil_moisture_percentage": {
+      "type": "decimal"
+    },
+    "humidity_percentage": {
+      "type": "decimal"
+    },
+    "temperature_celcius": {
+      "type": "decimal"
+    },
+    "time_record": {
+      "type": "datetime"
+    }
+  }
+}

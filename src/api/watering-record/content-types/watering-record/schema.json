@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "watering_records",
+  "info": {
+    "singularName": "watering-record",
+    "pluralName": "watering-records",
+    "displayName": "Watering Record"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "score": {
+      "type": "decimal"
+    },
+    "total_precipitation": {
+      "type": "decimal"
+    },
+    "soil_moisture_percentage": {
+      "type": "decimal"
+    },
+    "humidity_percentage": {
+      "type": "decimal"
+    },
+    "temperature_celcius": {
+      "type": "decimal"
+    },
+    "time": {
+      "type": "time"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

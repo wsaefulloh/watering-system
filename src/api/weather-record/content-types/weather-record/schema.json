@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "weather_records",
+  "info": {
+    "singularName": "weather-record",
+    "pluralName": "weather-records",
+    "displayName": "Weather Record"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "response_bmkg": {
+      "type": "json"
+    },
+    "time_record": {
+      "type": "datetime"
+    }
+  }
+}
