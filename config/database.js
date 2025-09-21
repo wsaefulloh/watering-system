@@ -20,7 +20,15 @@ module.exports = ({ env }) => {
           rejectUnauthorized: env.bool('DATABASE_SSL_REJECT_UNAUTHORIZED', true),
         },
       },
-      pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
+      pool: {
+        min: env.int('DATABASE_POOL_MIN', 2),
+        max: env.int('DATABASE_POOL_MAX', 10),
+        acquireTimeoutMillis: 60000, // timeout ambil koneksi
+        idleTimeoutMillis: 30000,   // koneksi idle ditutup
+        reapIntervalMillis: 1000,
+        createTimeoutMillis: 30000,
+        destroyTimeoutMillis: 5000,
+      },
     },
     postgres: {
       connection: {
